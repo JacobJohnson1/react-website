@@ -13,9 +13,8 @@
   }
 }
 
-.App-header {
+.App {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,8 +23,38 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navBarTab {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#socialIcons {
+  color: white;
+  padding: 0.5rem;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+#socialIcons:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#navBtn {
+  color: black;
+  padding: 1rem;
+  border:1px solid #61dafb ;   
+  background-color: #61dafb;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+#navBtn:hover{
+  transform: scale(1.05)
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +64,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.skillsGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1 0 45%;
+  margin: auto 15% 2rem 15%; 
+}
+
+.posts {
+  border: 1px solid white;
+  background-color: white;
+  opacity: 50%;
+  color: black;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 30rem;
+  height: 10rem;
+}
+
+.skillLogos {
+  max-width: 15%;
+  max-height: auto;
 }
