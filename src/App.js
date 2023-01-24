@@ -4,13 +4,14 @@ import Navbar from './components/Navbar.js'
 import Footer from './components/Footer';
 import Posts from './components/Posts';
 import Blog from './components/Blog';
+import About from './components/About';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Navbar />
-        <img src={logo} className="App-logo" alt="logo" />
+        <About />
       </header>
       <Posts />     
       <Blog />
