@@ -6,10 +6,10 @@ import cppLogo from './photos/cpp.png';
 
 
 export const posts = [
-    "JavaScript",
-    "React",
-    "C++",
-    "Python",
-    "Java",
+    "Blog 1",
+    "Blog 2",
+    "Blog 3",
+    "Blog 4",
+    "Blog 5",
 ]
 

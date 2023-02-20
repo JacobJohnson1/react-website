@@ -7,15 +7,9 @@ export default function Navbar() {
       <header>
         <div>
           <nav className="navBarTab">
-          <a href="#Skills" id="navBtn">
-              Skills
-            </a>
-            <a href="#Blog" id="navBtn">
-              Blog
-            </a>
-            <a href="#Contact" id="navBtn">
-            Contact
-            </a>
+          <a href="#About" id="navBtn">About</a>
+          <a href="#Blog" id="navBtn">Blog</a>
+          <a href="#Contact" id="navBtn">Contact</a>
           </nav>
         </div>
       </header>
