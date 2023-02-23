@@ -1,6 +1,12 @@
-.App {
-  text-align: center;
+a:hover {
+  transform: scale(1.05)
 }
+
+#About{
+  /* margin-top: 200px; */
+  padding: 10rem;
+}
+
 /* 
 .App-logo {
   height: 40vmin;
@@ -22,23 +28,34 @@
   }
 } */
 
-.App {
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
 #Blog{
   padding-top: 15rem;
+  text-decoration: none;
+}
+
+#Blog, a{
+  text-decoration: none;
+  color: black;
+}
+
+.blogBackground{
+  opacity: 50%;
 }
 
 .footer {
   border: 1px solid #000;
   width: 90%;
   margin-bottom: 2rem;
+}
+
+.Home {
+  text-align: center;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
 }
 
 .navBarTab {
@@ -60,27 +77,45 @@
   padding-right: 1rem;
 }
 
+.navBarTabBlog{
+  left: 30px;
+  top: 30px;
+  right: 30px;
+  display: block;
+  z-index: 200000;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: fixed;
+  bottom: auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: #ffffff;
+  overflow: none;
+  padding-left: 1rem;
+}
+
 #navBtn {
   color: black;
   padding: 1rem;
   border: none;   
   background-color: #ffffff;
-  text-decoration: none;
-}
-
-#navBtn:hover{
-  transform: scale(1.05)
 }
 
 .posts {
   border: 1px solid white;
-  background-color: white;
-  opacity: 50%;
   color: black;
   border-radius: 10px;
   padding: 2rem;
   width: 30rem;
   height: 10rem;
+}
+
+.posts:hover {
+  background-color: rgb(172, 172, 172);
+  opacity: 50%;
+  cursor: pointer;
 }
 
 .skillsGrid {
@@ -100,6 +135,10 @@
   max-height: auto;
 }
 
+.smallBody{
+  font-size: small;
+}
+
 #socialIcons {
   color: black;
   padding: 0.5rem;
@@ -109,7 +148,7 @@
 }
 
 #socialIcons:hover{
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   cursor: pointer;
 }
 

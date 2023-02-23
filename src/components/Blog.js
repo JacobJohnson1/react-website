@@ -5,13 +5,17 @@ import { posts } from "../data";
 export default function Blog() {
   return (
     <section id="Blog">
-      <p>Blog</p>
+      {/* <a href="/BlogHome">blog</a>
+      <br></br>
+      <br></br> */}
       <div>
         <div className="skillsGrid">
           {posts.map((post) => (
-            <div key={post} className="posts">
-                <span>{post}</span>
-            </div>
+            <a href={post.link}>
+              <div key={post} className="posts">
+                <span>{post.name}</span>
+              </div>
+            </a>
           ))}
         </div>
       </div>

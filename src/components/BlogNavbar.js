@@ -2,14 +2,12 @@ import React from "react";
 import '../App.css';
 
 
-export default function Navbar() {
+export default function BlogNavbar() {
     return (
       <header>
         <div>
-          <nav className="navBarTab">
-          <a href="#About" id="navBtn">about</a>
-          <a href="#Blog" id="navBtn">blog</a>
-          <a href="#Contact" id="navBtn">contact</a>
+          <nav className="navBarTabBlog">
+          <a class='fa fa-arrow-left' href='/'> back</a>
           </nav>
           <div className="underHeader">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
