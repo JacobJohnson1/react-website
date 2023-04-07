@@ -1,4 +1,5 @@
 import { posts } from "../data";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -7,7 +8,7 @@ export default function Home() {
             <header>
                 <div>
                 <nav className="navBarTabBlog">
-                <a className='fa fa-arrow-left' href='/'> back</a>
+                <Link className='fa fa-arrow-left' href='/'> back</Link>
                 </nav>
                 <div className="underHeader">
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -34,7 +35,7 @@ export default function Home() {
                 <div>
                     <div className="skillsGrid">
                     {posts.map((post) => (
-                        <a href={post.link}>
+                        <a key={post.link} href={post.link}>
                         <div className="posts">
                             <span>{post.name}</span>
                         </div>

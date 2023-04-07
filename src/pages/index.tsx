@@ -43,7 +43,7 @@ export default function Home() {
         <div>
           <div className="skillsGrid">
             {posts.map((post) => (
-              <a href={post.link}>
+              <a key={post.link} href={post.link}>
                 <div className="posts">
                   <span>{post.name}</span>
                 </div>
@@ -58,11 +58,11 @@ export default function Home() {
         <div>
           <div className="skillsGrid">
             {books.map((books) => (
-              <a href={books.link}>
+              <a key={books.link} href={books.link}>
                 <div className="posts">
                   <span>
                     {/* {books.name} */}
-                    <img src={books.image} className='postPic'></img>
+                    <Image src={books.image} className='postPic' alt='{books.name}'></Image>
                   </span>
                 </div>
               </a>
