@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -104,4 +104,183 @@ a {
   html {
     color-scheme: dark;
   }
+} */
+
+a:hover {
+  transform: scale(1.05)
+}
+
+#About{
+  /* margin-top: 200px; */
+  padding: 10rem;
+}
+
+/* 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+} */
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+#Blog{
+  padding-top: 15rem;
+  text-decoration: none;
+}
+
+#Blog, a{
+  text-decoration: none;
+  color: black;
+}
+
+.blogBackground{
+  opacity: 50%;
+}
+
+.footer {
+  border: 1px solid #000;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+.Home {
+  text-align: center;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.navBarTab {
+  left: 30px;
+  top: 30px;
+  right: 30px;
+  display: block;
+  z-index: 200000;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: #ffffff;
+  overflow: none;
+  padding-right: 1rem;
+}
+
+.navBarTabBlog{
+  left: 30px;
+  top: 30px;
+  right: 30px;
+  display: block;
+  z-index: 200000;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: fixed;
+  bottom: auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: #ffffff;
+  overflow: none;
+  padding-left: 1rem;
+}
+
+#navBtn {
+  color: black;
+  padding: 1rem;
+  border: none;   
+  background-color: #ffffff;
+}
+
+.posts {
+  border: 1px solid white;
+  color: black;
+  /* border-radius: 10px; */
+  /* padding: 2rem; */
+  margin: 1rem;
+  width: 15rem;
+  height: 10rem;
+}
+
+.posts:hover {
+  background-color: rgb(172, 172, 172);
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.postPic {
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+.skillsGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1 0 45%;
+  /* margin: auto 15% 2rem 15%;  */
+  margin: 2rem;
+}
+
+.skillLogos {
+  max-width: 15%;
+  max-height: auto;
+}
+
+.smallBody{
+  font-size: small;
+}
+
+#socialIcons {
+  color: black;
+  padding: 0.5rem;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+#socialIcons:hover{
+  /* transform: scale(1.1); */
+  cursor: pointer;
+}
+
+.underHeader{
+  left: 30px;
+  top: 125px;
+  right: 30px;
+  display: block;
+  z-index: 200000;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  overflow: none;
+  padding-right: 1rem;
 }
