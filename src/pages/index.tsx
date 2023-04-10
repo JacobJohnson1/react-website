@@ -16,7 +16,7 @@ export default function Home() {
             <nav className="navBarTab">
             <a href="#About" id="navBtn">about</a>
             <a href="#Blog" id="navBtn">blog</a>
-            <a href="#Book" id ='navBtn'>books</a>
+            <a href="#Books" id ='navBtn'>books</a>
             <a href="#Contact" id="navBtn">contact</a>
             </nav>
             <div className="underHeader">
