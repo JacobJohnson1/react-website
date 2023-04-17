@@ -14,10 +14,10 @@ export default function Home() {
         <header>
           <div>
             <nav className="navBarTab">
-            <a href="#About" id="navBtn">about</a>
-            <a href="#Blog" id="navBtn">blog</a>
-            <a href="#Books" id ='navBtn'>books</a>
-            <a href="#Contact" id="navBtn">contact</a>
+            <a href="#About" id="navBtn">About</a>
+            <a href="#Blog" id="navBtn">Blog</a>
+            <a href="#Books" id ='navBtn'>Books</a>
+            <a href="#Contact" id="navBtn">Contact</a>
             </nav>
             <div className="underHeader">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -32,13 +32,20 @@ export default function Home() {
         </header>
       </header>
       <div id='About'>
-        <p>about section</p>
-        <p className='smallBody'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p>About</p>
+        <p className='smallBody'>
+          My name is Jacob Johnson. I have a degree in computer science from the University of Missouri - Kansas City and I am a software engineer 
+          for an insurance company!. 
+          <br></br>
+          <br></br>
+          This site has been created from scratch by me, so please 
+          feel free to read about the projects I've worked on, books I've read, 
+          and anything else I have on here.
         </p>
       </div>
       
       <section id="Blog">
-        <p>blog</p>
+        <p>Blog</p>
         <a href="/BlogHome" className='smallBody'>see all</a>
         <div>
           <div className="skillsGrid">
@@ -53,7 +60,7 @@ export default function Home() {
         </div>
       </section>
       <section id="Books">
-        <p>books</p>
+        <p>Books</p>
         <a href='' className='smallBody'>see all</a>
         <div>
           <div className="skillsGrid">
