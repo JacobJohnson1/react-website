@@ -39,8 +39,8 @@ export default function Home() {
           <br></br>
           <br></br>
           This site has been created from scratch by me, so please 
-          feel free to read about the projects I've worked on, books I've read, 
-          and anything else I have on here.
+          feel free to read about the projects I have worked on, books read, 
+          and anything else on here.
         </p>
       </div>
       
