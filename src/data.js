@@ -17,11 +17,11 @@ export const posts = [
 ]
 
 export const books = [
-    {
-        name: 'review 1',
-        image: '/supposedlyFunThing.PNG',
-        link: ''
-    },
+    // {
+    //     name: 'review 1',
+    //     image: '/supposedlyFunThing.PNG',
+    //     link: ''
+    // },
     {
         name: 'review 2',
         image: '',

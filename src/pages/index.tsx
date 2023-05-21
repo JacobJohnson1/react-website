@@ -7,7 +7,13 @@ import { books, posts } from "../data";
 
 const inter = Inter({ subsets: ['latin'] })
 
+const goodreads_rss_url = 'https://www.goodreads.com/user/updates_rss/108357320'
+
 export default function Home() {
+  // fetch(goodreads_rss_url)
+  // .then(response => response.text())
+  // .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+  // .then(data => console.log(data))
   return (
     <div className="Home">
       <header className="Home-header">
@@ -16,7 +22,6 @@ export default function Home() {
             <nav className="navBarTab">
             <a href="#About" id="navBtn">About</a>
             <a href="#Blog" id="navBtn">Blog</a>
-            <a href="#Books" id ='navBtn'>Books</a>
             <a href="#Contact" id="navBtn">Contact</a>
             </nav>
             <div className="underHeader">
@@ -32,10 +37,9 @@ export default function Home() {
         </header>
       </header>
       <div id='About'>
-        <p>About</p>
         <p className='smallBody'>
           My name is Jacob Johnson. I have a degree in computer science from the University of Missouri - Kansas City and I am a software engineer 
-          for an insurance company!. 
+          for an insurance company! 
           <br></br>
           <br></br>
           This site has been created from scratch by me, so please 
@@ -43,10 +47,7 @@ export default function Home() {
           and anything else on here.
         </p>
       </div>
-      
       <section id="Blog">
-        <p>Blog</p>
-        <a href="/BlogHome" className='smallBody'>see all</a>
         <div>
           <div className="skillsGrid">
             {posts.map((post) => (
@@ -59,23 +60,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="Books">
-        <p>Books</p>
-        <a href='' className='smallBody'>see all</a>
-        <div>
-          <div className="skillsGrid">
-            {books.map((books) => (
-              <a key={books.link} href={books.link}>
-                <div className="posts">
-                  <span>
-                    {/* {books.name} */}
-                    <Image src={books.image} className='postPic' alt='{books.name}'></Image>
-                  </span>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
+      <section id="footer">
+        <p className='smallBody'>Page x of x
+        <a className='smallBody' href="/page/2"> &gt;&nbsp;&gt;&nbsp;&gt;</a>
+        </p>
       </section>
     </div>
   )
