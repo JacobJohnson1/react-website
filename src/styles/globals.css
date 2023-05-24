@@ -216,11 +216,11 @@ a:hover {
 }
 
 .posts {
-  border: 1px solid white;
-  color: black;
+  /* border: 1px solid white; */
+  /* color: black; */
   margin: 1rem;
-  width: 15rem;
-  height: 10rem;
+  width: 25rem;
+  height: 15rem;
 }
 
 .posts:hover {

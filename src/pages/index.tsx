@@ -2,8 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import React from "react";
-import { books, posts } from "../data";
+import React, { useState, useEffect} from "react";
+import { posts } from "../data";
+import Paginate from '../Paginate';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,6 +15,19 @@ export default function Home() {
   // .then(response => response.text())
   // .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
   // .then(data => console.log(data))
+
+  const [blogPosts, setBlogPosts] = useState(posts);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(3);
+
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = blogPosts.slice(indexOfFirstPost, indexOfLastPost);
+ 
+  const paginate = (pageNumber: React.SetStateAction<number>) => {
+    setCurrentPage(pageNumber);
+  };
+
   return (
     <div className="Home">
       <header className="Home-header">
@@ -47,13 +61,13 @@ export default function Home() {
           and anything else on here.
         </p>
       </div>
-      <section id="Blog">
+      <section id="Blog" className='Blog'>
         <div>
-          <div className="skillsGrid">
+          <div className={styles.skillsGrid}>
             {posts.map((post) => (
-              <a key={post.link} href={post.link}>
+              <a key={post.url} href={post.url}>
                 <div className="posts">
-                  <span>{post.name}</span>
+                  <span>{post.title}</span>
                 </div>
               </a>
             ))}
@@ -65,6 +79,63 @@ export default function Home() {
         <a className='smallBody' href="/page/2"> &gt;&nbsp;&gt;&nbsp;&gt;</a>
         </p>
       </section>
+      <Paginate
+        postsPerPage={postsPerPage}
+        totalPosts={blogPosts.length}
+        paginate={paginate} 
+        currentPage={undefined} 
+        previousPage={undefined} 
+        nextPage={undefined}      
+      />
     </div>
   )
+
+//   return (
+//     <div className="container">
+//        <div className="title">
+//           <h1>Blog</h1>
+//        </div>
+//        {blogPosts ? (
+//           <div className="blog-content-section">
+//              <div className="blog-container">
+//                 {blogPosts.map((blogPost) => (
+//                    <div className="blog-post" key={blogPost.id}>
+//                       <img className="cover-img" src={blogPost.url} alt="" />
+//                       <h2 className="title">{blogPost.title}</h2>
+//                       <div className="card-details">
+//                          <div className="lh-details">
+//                             {/* <img
+//                                className="author-img"
+//                                src={blogPost.author.profilePicture.url}
+//                                alt=""
+//                             /> */}
+//                             <p className="date">
+//                                {new Date(`${blogPost.date}`).toLocaleDateString(
+//                                   'en-us',
+//                                   {
+//                                      year: 'numeric',
+//                                      month: 'short',
+//                                      day: 'numeric',
+//                                   }
+//                                )}
+//                             </p>
+//                          </div>
+//                          <a
+//                             href={blogPost.url}
+//                             target="_blank"
+//                             rel="noopener noreferrer"
+//                             className="read-more"
+//                          >
+//                             Read post
+//                          </a>
+//                       </div>
+//                    </div>
+//                 ))}
+//              </div>
+//           </div>
+//        ) : (
+//           <div className="loading">Loading...</div>
+//        )}
+//     </div>
+//  );
 }

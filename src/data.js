@@ -1,36 +1,24 @@
 export const posts = [
     {
-        name: 'post 1',
+        id: 1,
+        title: 'post 1',
         image: '',
-        link: '/Post1'
+        url: '',
+        date: '',
     },
     {
-        name: 'post 2',
+        id: 2,
+        title: 'post 2',
         image: '',
-        link: ''
+        url: '',
+        date: '',
     },
     {
-        name: 'post 3',
+        id: 3,
+        title: 'post 3',
         image: '',
-        link: ''
-    },
-]
-
-export const books = [
-    // {
-    //     name: 'review 1',
-    //     image: '/supposedlyFunThing.PNG',
-    //     link: ''
-    // },
-    {
-        name: 'review 2',
-        image: '',
-        link: ''
-    },
-    {
-        name: 'review 3',
-        image: '',
-        link: ''
+        url: '',
+        date: '',
     },
 ]
 
