@@ -20,6 +20,27 @@ export const posts = [
         url: '',
         date: '',
     },
+    {
+        id: 4,
+        title: 'post 4',
+        image: '',
+        url: '',
+        date: '',
+    },
+    {
+        id: 5,
+        title: 'post 5',
+        image: '',
+        url: '',
+        date: '',
+    },
+    {
+        id: 6,
+        title: 'post 6',
+        image: '',
+        url: '',
+        date: '',
+    },
 ]
 
 

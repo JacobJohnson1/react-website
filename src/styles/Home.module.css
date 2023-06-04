@@ -385,11 +385,6 @@ a {
   }
 } */
 
-#About{
-  /* margin-top: 200px; */
-  padding: 10rem;
-}
-
 /* 
 .App-logo {
   height: 40vmin;
@@ -442,12 +437,12 @@ a {
   top: 30px;
   right: 30px;
   display: block;
-  z-index: 200000;
+  /* z-index: 200000; */
   border: 1px solid #000;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  position: fixed;
+  /* position: fixed; */
   bottom: auto;
   padding-top: 14px;
   padding-bottom: 14px;
@@ -536,11 +531,11 @@ a {
   top: 125px;
   right: 30px;
   display: block;
-  z-index: 200000;
+  /* z-index: 200000; */
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  position: fixed;
+  /* position: fixed; */
   bottom: auto;
   padding-top: 14px;
   padding-bottom: 14px;

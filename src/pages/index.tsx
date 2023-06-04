@@ -8,7 +8,7 @@ import Paginate from '../Paginate';
 
 const inter = Inter({ subsets: ['latin'] })
 
-const goodreads_rss_url = 'https://www.goodreads.com/user/updates_rss/108357320'
+// const goodreads_rss_url = 'https://www.goodreads.com/user/updates_rss/108357320'
 
 export default function Home() {
   // fetch(goodreads_rss_url)
@@ -27,6 +27,18 @@ export default function Home() {
   const paginate = (pageNumber: React.SetStateAction<number>) => {
     setCurrentPage(pageNumber);
   };
+
+  const previousPage = () => {
+    if (currentPage !== 1) {
+       setCurrentPage(currentPage - 1);
+    }
+ };
+
+ const nextPage = () => {
+    if (currentPage !== Math.ceil(blogPosts.length / postsPerPage)) {
+       setCurrentPage(currentPage + 1);
+    }
+ };
 
   return (
     <div className="Home">
@@ -83,9 +95,9 @@ export default function Home() {
         postsPerPage={postsPerPage}
         totalPosts={blogPosts.length}
         paginate={paginate} 
-        currentPage={undefined} 
-        previousPage={undefined} 
-        nextPage={undefined}      
+        currentPage={currentPage} 
+        previousPage={previousPage} 
+        nextPage={nextPage}      
       />
     </div>
   )
