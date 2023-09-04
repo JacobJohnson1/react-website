@@ -36,7 +36,7 @@ export default function Home() {
         </header>
       </header>
       <div id='About'>
-        <p className='smallBody'>
+        <p>
           My name is Jacob Johnson. I have a degree in computer science from the University of Missouri - 
           Kansas City and I am a software engineer 
           for an insurance company. 
